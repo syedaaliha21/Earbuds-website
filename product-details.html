@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | BUDSLICHI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="product-details.css">
+</head>
+<body>
+
+    <header class="details-header">
+        <a href="index.html" class="details-logo">
+            BUDSLICHI<span>.</span>
+        </a>
+
+        <a href="index.html#products" class="back-link">
+            ← Back to Collection
+        </a>
+    </header>
+
+    <main class="details-page">
+
+        <section class="gallery">
+
+            <div class="main-image-wrap">
+                <img id="mainProductImage" src="" alt="Selected Earbuds">
+            </div>
+
+            <div class="thumbnail-row">
+
+                <button class="thumbnail active" data-image="main">
+                    <img id="thumbMain" src="" alt="Product view 1">
+                </button>
+
+                <button class="thumbnail" data-image="extra1">
+                    <img id="thumbExtra1" src="images/product-extra-1.jpg" alt="Product view 2">
+                </button>
+
+                <button class="thumbnail" data-image="extra2">
+                    <img id="thumbExtra2" src="images/product-extra-2.jpg" alt="Product view 3">
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="product-information">
+
+            <span class="eyebrow">BUDSLICHI COLLECTION</span>
+
+            <h1 id="productName">Product Name</h1>
+
+            <div class="price-line">
+                <strong id="productPrice"></strong>
+                <span id="productOldPrice"></span>
+            </div>
+
+            <p class="description" id="productDescription"></p>
+
+            <div class="detail-divider"></div>
+
+            <h2>Product Highlights</h2>
+
+            <ul class="highlights">
+                <li>Designed for everyday listening</li>
+                <li>Wireless earbuds with charging case</li>
+                <li>Comfort-focused design</li>
+                <li>Modern and stylish appearance</li>
+            </ul>
+
+            <div class="purchase-actions">
+
+                <button class="add-to-cart" id="detailsAddCart">
+                    ADD TO CART
+                </button>
+
+                <button class="buy-now" id="detailsBuyNow">
+                    BUY IT NOW
+                </button>
+
+            </div>
+
+            <p class="demo-note" id="actionMessage"></p>
+
+        </section>
+
+    </main>
+
+    <script src="product-details.js"></script>
+
+</body>
+</html>
